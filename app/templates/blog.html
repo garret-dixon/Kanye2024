@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h1>Blog</h1>
+<form method=post>
+    {{ form.csrf_token }}
+    {{form.message}}
+    <input type=submit>
+</form>
+<hr>
+<ul>
+    {% for post in posts %}
+    <p>{{post.username}} says: {{post.message}}</p>
+    <hr> 
+    {% endfor %}
+</ul>
+{% endblock %}

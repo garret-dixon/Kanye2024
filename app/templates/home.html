@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h1> KANYE 2024 </h1>
+<!-- <img src="templates/img/kanye.jpg" alt = "style"></img> -->
+<h4>Welcome to the Kanye 2024 homepage! View how the 2020 election went for kanye or sign up and post your support for Kanye 2024!</h4> 
+
+<ul>
+    <p> <a href="{{url_for('index')}}">2020 Election Results</a> </p>
+    <p> <a href="{{url_for('loginpage')}}">Log In</a> </p> 
+    <p> <a href="{{url_for('signup')}}">Sign Up</a> </p> 
+    <p> <a href="{{url_for('blog')}}">Show Your Support</a>  </p> 
+</ul>
+{%endblock %}
